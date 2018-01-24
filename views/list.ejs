@@ -1,0 +1,8 @@
+<%- include('partials/head'); %>
+  <ul>
+    <% articles.forEach(function(article){ %>
+      <%- include('partials/article', { article: article }); %>
+    <% }) %>
+  </ul>
+
+<%- include('partials/footer'); %>
